@@ -5,7 +5,7 @@ form.addEventListener("submit", handleSubmit);
 function handleSubmit(event) {
   event.preventDefault();
   const { login, password } = event.currentTarget.elements;
-  console.dir(login, password);
+  // console.dir(login, password);
   let flag = false;
   const formData = new FormData(form);
   const object = {};
@@ -16,7 +16,7 @@ function handleSubmit(event) {
     }
   });
   if (flag) {
-    return alert("text");
+    return alert("Please fill in all the fields!");
   }
   console.log(object);
   // if (login.value === "" || password.value === "") {
