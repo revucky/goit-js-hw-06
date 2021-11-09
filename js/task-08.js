@@ -18,7 +18,7 @@ function handleSubmit(event) {
   if (flag) {
     return alert("Please fill in all the fields!");
   }
-  console.log(object);
+  form.reset();
   // if (login.value === "" || password.value === "") {
   //   return alert
   // }
